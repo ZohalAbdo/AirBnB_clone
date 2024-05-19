@@ -81,6 +81,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn("name", model_dict)
         self.assertEqual(model_dict["name"], "Test Name")
 
+
 class Test_dict(unittest.TestCase):
     """
     tests the self.to_dict() method
@@ -219,6 +220,7 @@ class Tess_save(unittest.TestCase):
         x = BaseModel()
         with self.assertRaises(TypeError):
             x.save(None)
+
 
 if __name__ == '__main__':
     unittest.main()
